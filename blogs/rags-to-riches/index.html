@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAGs to RIChes — Machtiani</title>
+  <meta name="description" content="RIC: Retrieval Input Compression, a technique for chatting with git projects at scale.">
+  <link rel="icon" type="image/png" href="../../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="../../"><img src="../../assets/machtiani-logo.png" alt="Machtiani" width="751" height="150"></a>
+    <nav class="site-nav"><a href="../">Blogs</a></nav>
+  </header>
+
+  <main>
+    <article class="post">
+      <h1>RAGs to RIChes</h1>
+      <div class="post-body">
+        <p>Video of a chat with 3 different git projects:</p>
+        <ul>
+          <li>Large (1500 files);</li>
+          <li>Small (50 files)</li>
+          <li>Medium (600 files).</li>
+        </ul>
+        <p>I’m pleased to announce that we came up with a novel technique that leverages the strength of LLMs to find the correct files to answer your prompts. We’re calling the strategy RIC: Retrieval Input Compression. We index the git history and the files statically. Then, essentially, we compress the information at the retrieval stage, which retains the semantic meaning. This gives the LLM context-fitting data to infer the exact appropriate files. It solves the apples to oranges problem and eliminates the necessity for file chunking. The results are astounding. We can chat with git projects at scale.</p>
+        <p>Here is a video where I chat with Algorand’s indexer project, which ingests Algrorand transactions for ease of discoverability. It has nearly 400 files checked into git, and it works unreasonably well.</p>
+      </div>
+    </article>
+
+    <nav class="pager" aria-label="More posts">
+      <a href="../the-shell-and-email/"><span aria-hidden="true">‹</span> The Shell &amp; Email</a>
+    </nav>
+  </main>
+</body>
+</html>
